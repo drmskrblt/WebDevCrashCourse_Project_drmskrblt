@@ -1,0 +1,375 @@
+body {
+  font-family: Archivo, san-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVIGATION */
+.navigation {
+  display: flex;
+  border: 2px solid #235784;
+  background: rgb(24, 57, 87);
+  background: linear-gradient(
+    0deg,
+    rgba(24, 57, 87, 1) 0%,
+    rgba(35, 87, 132, 1) 49%,
+    rgba(24, 57, 87, 1) 100%
+  );
+  border-radius: 24px;
+  box-shadow: 2px 6px 12px #000000;
+  padding: 12px 24px;
+  margin: 6px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation li a {
+  /* border: 2px solid darkred; */
+  /* border-radius: 2px solid red; */
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  /* font-weight: bold; */
+  font-size: 20px;
+  padding: 12px;
+  margin: 24px;
+  /* margin-right: 100px; */
+  letter-spacing: 2px;
+}
+.navigation li:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+  /* border: 1px solid white; */
+  /* text-align: center; */
+}
+
+/* .navigation li a:hover {
+  font-weight: bold; 
+  transform: scale(1.2);
+  border: 1px solid white;
+ border-radius: 10px;
+} 
+*/
+
+/* .navigation li .logo{
+	display: inline-block;
+	width: 50px;
+} */
+
+/* END NAVIGATION */
+
+/* LANDING PAGE */
+
+.landing-page {
+  display: flex;
+  color: white;
+  background-image: url(./images/background-wallhere.com.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.landing-page h1 {
+  font-size: 40px;
+  width: fit-content;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 5px;
+  margin-bottom: 100px;
+  padding: 12px 12px;
+  /* background-color: black; */
+  /* color: rgb(35, 87, 132); */
+}
+
+.landing-page p {
+  margin: 6px;
+  padding: 12px;
+  margin-top: 200px;
+}
+
+.landing-page .button {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 6px 12px;
+  margin: 2px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* END LANDING PAGE */
+
+/* MAIN GESCHICHTE */
+.main-geschichte {
+  /* border: 2px solid red; */
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 12px;
+  background-color: rgb(235, 235, 235);
+}
+
+.main-geschichte img {
+  width: 300px;
+  height: 200px;
+  margin: 6px;
+  border-radius: 60%;
+  /* border: 2px solid rgb(22, 54, 83); */
+}
+
+.main-geschichte h2 {
+  color: white;
+  background-color: rgba(35, 87, 132, 1);
+  border: 2px solid rgb(22, 54, 83);
+  box-shadow: 2px 6px 12px #343434;
+  padding: 6px 12px;
+  margin: 6px;
+  border-radius: 24px;
+  font-size: 30px;
+}
+
+.main-geschichte li {
+  font-weight: bold;
+  list-style-type: square;
+  /* LIST SQUARE CENTERED */
+  list-style-position: inside;
+  padding: 6px;
+  text-align: center;
+}
+
+.main-geschichte p {
+  text-align: center;
+  padding: 10px 200px;
+  font-size: 18px;
+}
+
+/* END MAIN GESCHICHTE */
+
+/* MAIN PLAYSTATION */
+
+.main-playstation {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(235, 235, 235);
+}
+
+.main-playstation h2 {
+  color: white;
+  background-color: rgba(35, 87, 132, 1);
+  border: 2px solid rgb(22, 54, 83);
+  box-shadow: 2px 6px 12px #343434;
+  padding: 6px 12px;
+  margin: 6px;
+  border-radius: 24px;
+  font-size: 30px;
+}
+
+.playstation-container {
+  /* border: 2px solid red; */
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.object-wrapper {
+  /* border: 2px solid blue; */
+  border-radius: 8px;
+  width: 300px;
+  height: 500px;
+  margin: 24px;
+}
+
+.top-wrapper {
+  border-radius: 12px 12px 0 0;
+  height: 33.3%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid rgb(22, 54, 83);
+  border-bottom: 0;
+  box-shadow: 1px 6px 12px #343434;
+}
+
+/* WRAPPER PICTURES */
+#top-01 {
+  background-image: url(./images/PSX.jpg);
+}
+#top-02 {
+  background-image: url(./images/PS2.jpg);
+}
+#top-03 {
+  background-image: url(./images/ps3_slim.jpg);
+}
+#top-04 {
+  background-image: url(./images/ps4.jpg);
+}
+#top-05 {
+  background-image: url(./images/ps5-playstation-5-reveal_6103769.jpg);
+}
+/* END WRAPPER PICTURES */
+
+.bot-wrapper {
+  border-radius: 0 0 6px 6px;
+  background-color: rgb(22, 54, 83);
+  border: 3px solid rgb(22, 54, 83);
+  border-top: 1px;
+  color: white;
+  height: 66.6%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 2px 2px 6px #343434;
+}
+
+.bot-wrapper h3 {
+  font-weight: bold;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+.bot-wrapper p {
+  font-size: 16px;
+  padding: 2px 4px;
+}
+/* END PLAYSTATION */
+
+/* KONTACT */
+
+.main-kontakt {
+  /* border: 2px solid red; */
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(235, 235, 235);
+}
+
+.main-kontakt h2 {
+  color: white;
+  background-color: rgba(35, 87, 132, 1);
+  border: 2px solid rgb(22, 54, 83);
+  box-shadow: 2px 6px 12px #343434;
+  padding: 6px 12px;
+  margin: 6px;
+  border-radius: 24px;
+  font-size: 30px;
+}
+.kontakt-container {
+  max-width: 400px;
+  height: 400px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 4px 4px;
+  border: 3px solid rgb(53, 123, 189);
+  background-color: rgb(22, 54, 83);
+  box-shadow: 2px 2px 6px #343434;
+  color: white;
+}
+
+.kontakt-container input,
+textarea {
+  display: box;
+  width: 100%;
+  resize: none;
+  padding: 3px 3px;
+}
+
+.haelfte {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.rechts-kontaktformukar {
+  width: 50%;
+}
+
+.links-kontaktformukar  {
+  margin-right: 2%;
+}
+
+/* Clearfix */
+.kontaktformular:before,
+.kontaktformular:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.kontaktformular:after {
+  clear: both;
+}
+/* END KONTAKT */
+
+/* FOOTER */
+
+.main-footer {
+  /* border: 2px solid red; */
+  height: 30vh;
+  width: 90%;
+  display: flex;
+  background-color: rgb(182, 200, 239);
+  /* border: 3px solid rgb(132, 138, 174); */
+  justify-content: space-evenly;
+  /* align-items: center; */
+  /* margin: 12px 12px; */
+  padding: 4px;
+  border-radius: 24px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.footer-container {
+  /* border: 2px solid green; */
+  margin: 0px 12px;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  padding: 12px 12px;
+}
+
+.footer-container h4 {
+  color: rgb(22, 54, 83);
+  font-size: 24px;
+}
+
+.footer-container li {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.footer-container li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container p {
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* END FOOTER */
